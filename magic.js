@@ -1,7 +1,7 @@
 (function(){
   var $ = function(s){return document.querySelectorAll(s);},
       preview = $('#preview')[0],
-      gen_file = $('input[type="radio"]')[2],
+      gen_file = $('input[type="radio"]')[$('input[type="radio"]').length-2],
       code = $('#code')[0],
       form = $('form')[0],
       iframe = $('iframe')[0],
@@ -27,7 +27,8 @@
     code.innerHTML = contents.outerHTML.replace(/[\u00A0-\u9999<>\&]/gim, function(i) {
      return '&#'+i.charCodeAt(0)+';';
     });
-    code.style.border = '1px solid #000';
+    code.style.display = 'block';
+    preview.style.display = 'block';
     window.location.href='#code';
   };
 

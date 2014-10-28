@@ -12,7 +12,11 @@ define('PORTAL', get_post_data_by_key('portal'));
 
 switch ( PORTAL ) {
   case 'onmeda':
-      $template_contents = file_get_contents('templates/onmeda.de.html');
+    $template_contents = file_get_contents('templates/onmeda.de.html');
+    break;
+
+  case 'bildderfrau':
+    $template_contents = file_get_contents('templates/bildderfrau.html');
     break;
 
   default:
