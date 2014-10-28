@@ -1,7 +1,7 @@
 (function(){
   var $ = function(s){return document.querySelectorAll(s);},
       preview = $('#preview')[0],
-      gen_file = $('input[type="radio"]')[0],
+      gen_file = $('input[type="radio"]')[2],
       code = $('#code')[0],
       form = $('form')[0],
       iframe = $('iframe')[0],

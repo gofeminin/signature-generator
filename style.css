@@ -12,6 +12,11 @@ html,body {
   max-width: 550px;
 }
 
+#preview {
+  max-width: 100%;
+  overflow: auto;
+}
+
 iframe {
   display: none;
 }

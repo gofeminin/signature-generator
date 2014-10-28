@@ -1,10 +1,28 @@
 <?php
 
-/* define('STREAM', file_get_contents('php://input')); */
-define('TMP_DIR','/tmp');
-define('FILENAME','signature.html');
+function get_post_data_by_key ( $key ) {
+  if ( isset ($_POST[ $key ] ) )
+    return $_POST[ $key ];
+  else
+    return '';
+};
 
-$template_contents = file_get_contents('html.html');
+define('FILENAME','signature.html');
+define('PORTAL', get_post_data_by_key('portal'));
+
+switch ( PORTAL ) {
+  case 'onmeda':
+      $template_contents = file_get_contents('templates/onmeda.de.html');
+    break;
+
+  default:
+    if ( get_post_data_by_key('newsgif') === '' )
+      $template_contents = file_get_contents('templates/gofeminin_without_newsgif.html');
+    else
+      $template_contents = file_get_contents('templates/gofeminin.html');
+    break;
+}
+
 $template_contents = str_replace(
   array(
     '{{firstname}}',
@@ -15,12 +33,12 @@ $template_contents = str_replace(
     '{{fax}}'
   ),
   array(
-    $_POST['firstname'],
-    $_POST['lastname'],
-    $_POST['jobtitle'],
-    $_POST['email'],
-    $_POST['telephone'],
-    $_POST['fax']
+    get_post_data_by_key('firstname'),
+    get_post_data_by_key('lastname'),
+    get_post_data_by_key('jobtitle'),
+    get_post_data_by_key('email'),
+    get_post_data_by_key('telephone'),
+    get_post_data_by_key('fax')
   ),
   $template_contents
 );
