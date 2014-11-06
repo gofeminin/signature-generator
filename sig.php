@@ -54,6 +54,7 @@ $template_contents = str_replace(
     header('Content-Description: File Transfer');
     header('Content-Disposition: attachment; filename='.FILENAME);
     header('Content-Transfer-Encoding: binary');
+    echo "\xEF\xBB\xBF"; // UTF-8 BOM
   } else {
     header('Content-Type: text/html, charset=utf-8');
   }
