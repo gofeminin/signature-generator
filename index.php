@@ -37,6 +37,10 @@
           Fax
         </label>
         <label>
+          <input type="checkbox" class="radio" name="dmexco2015" value="true" />
+          Dmexco Zusatzinfo
+        </label>
+        <label>
           <input type="checkbox" class="radio" name="newsgif" value="true" />
           News GIF
         </label>
