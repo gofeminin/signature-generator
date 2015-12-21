@@ -14,11 +14,6 @@ switch ( PORTAL ) {
   case 'onmeda':
     $template_contents = file_get_contents('templates/onmeda.de.html');
     break;
-
-  case 'bildderfrau':
-    $template_contents = file_get_contents('templates/bildderfrau.html');
-    break;
-
   default:
     if ( get_post_data_by_key('dmexco2015') === 'true' )
       $template_contents = file_get_contents('templates/gofeminin_dmexco.html');

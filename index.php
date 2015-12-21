@@ -54,10 +54,6 @@
             <input type="radio" class="radio" name="portal" value="onmeda" />
             Onmeda
           </label>
-          <label>
-            <input type="radio" class="radio" name="portal" value="bildderfrau" />
-            Bild der Frau
-          </label>
         </fieldset>
         <fieldset>
           Signatur Datei Erstellen?
