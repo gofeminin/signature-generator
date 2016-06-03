@@ -1,5 +1,7 @@
-<?php header('Content-Type:text/html; charset=utf-8'); ?>
-<!DOCTYPE html>
+<?php
+header('Content-Type:text/html; charset=utf-8');
+header_remove('X-UA-Compatible');
+?><!DOCTYPE html>
 <html>
   <head>
     <title>Signatur-Generator</title>
