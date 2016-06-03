@@ -66,7 +66,7 @@
             Nein, gib mir nur den Code
           </label>
         </fieldset>
-        <button>Ich bin soweit!</button>
+        <button type="submit">Ich bin soweit!</button>
       </form>
       <div contenteditable="true" id="code"></div>
       <div id="preview"></div>
