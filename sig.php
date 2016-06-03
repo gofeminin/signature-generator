@@ -53,6 +53,7 @@ $template_contents = str_replace(
     header('Content-Transfer-Encoding: binary');
     echo "\xEF\xBB\xBF"; // UTF-8 BOM
   } else {
+    header('Content-Disposition: inline; filename='.FILENAME);
     header('Content-Type: text/html, charset=utf-8');
   }
   echo $template_contents;
