@@ -1,6 +1,7 @@
 # How To gofeminin de Onmeda de Signatur in Gmail einfügen 
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/YGX3DknDHww" frameborder="0" allowfullscreen></iframe>
+[Hier](https://www.youtube.com/embed/YGX3DknDHww) geht es zu einem Video,
+das zeigt, wie das ganze funktioniert.
 
 - [admin.onmeda.de/signature](https://admin.onmeda.de/signature/) aufrufen
 - Alles ordentlich ausfüllen
