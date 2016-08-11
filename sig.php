@@ -16,7 +16,7 @@ switch ( PORTAL ) {
     break;
   default:
     if ( get_post_data_by_key('dmexco2015') === 'true' )
-      $template_contents = file_get_contents('templates/gofeminin_dmexco.html');
+      $template_contents = file_get_contents('templates/gofeminin_dmexco_2016.html');
     else if ( get_post_data_by_key('newsgif') === '' )
       $template_contents = file_get_contents('templates/gofeminin_without_newsgif.html');
     else
