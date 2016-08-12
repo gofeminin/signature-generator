@@ -1,4 +1,4 @@
-<?php
+y<?php
 
 function get_post_data_by_key ( $key ) {
   if ( isset ($_POST[ $key ] ) )
@@ -9,18 +9,25 @@ function get_post_data_by_key ( $key ) {
 
 define('FILENAME','signature.html');
 define('PORTAL', get_post_data_by_key('portal'));
-
+$newsContent = "";
+$news = false;
 switch ( PORTAL ) {
   case 'onmeda':
     $template_contents = file_get_contents('templates/onmeda.de.html');
     break;
   default:
-    if ( get_post_data_by_key('dmexco2015') === 'true' )
-      $template_contents = file_get_contents('templates/gofeminin_dmexco_2016.html');
-    else if ( get_post_data_by_key('newsgif') === '' )
+    if ( get_post_data_by_key('dmexco2015') === 'true' ) {
+        $template_contents = file_get_contents('templates/gofeminin_dmexco_2016.html');
+        
+        if ( get_post_data_by_key('newsgif') !== '' ) {
+            $newsContent = "<tr><td width=\"100%\" style=\"max-widht:600px;\" align=\"left\"><a href=\"http://www.gofeminin.de/\" target=\"_blank\"><img src=\"http://www.gofeminin.de/reloaded/emailSignature.gif\" border=\"0\" /></a></td></tr>";
+        }
+        
+    } else if ( get_post_data_by_key('newsgif') === '' ) {
       $template_contents = file_get_contents('templates/gofeminin_without_newsgif.html');
-    else
+    } else {
       $template_contents = file_get_contents('templates/gofeminin.html');
+    }
     break;
 }
 
@@ -31,7 +38,8 @@ $template_contents = str_replace(
     '{{jobtitle}}',
     '{{email}}',
     '{{telephone}}',
-    '{{fax}}'
+    '{{fax}}',
+      '<!-- NEWS_GIF -->'
   ),
   array(
     get_post_data_by_key('firstname'),
@@ -39,7 +47,8 @@ $template_contents = str_replace(
     get_post_data_by_key('jobtitle'),
     get_post_data_by_key('email'),
     get_post_data_by_key('telephone'),
-    get_post_data_by_key('fax')
+    get_post_data_by_key('fax'),
+    $newsContent
   ),
   $template_contents
 );
