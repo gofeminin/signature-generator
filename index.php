@@ -60,11 +60,11 @@ header_remove('X-UA-Compatible');
         <fieldset>
           Signatur Datei Erstellen?
           <label>
-            <input type="radio" class="radio" name="genfile" value="true" />
+            <input type="radio" class="radio" name="genfile" value="true" checked="checked"/>
             Ja, klar
           </label>
           <label>
-            <input type="radio" class="radio" name="genfile" value="false" checked="checked" />
+            <input type="radio" class="radio" name="genfile" value="false" />
             Nein, gib mir nur den Code
           </label>
         </fieldset>
