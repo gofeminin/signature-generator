@@ -36,7 +36,7 @@ header_remove('X-UA-Compatible');
 				</label>
 				<label>
 					<input type="tel" class="input_text" name="corp_phone" placeholder="+49 175 1337 187" />
-					Telefon
+					Dienstliche Handynummer
 				</label>
 				<label>
 					<input type="tel" class="input_text" name="fax" value="+49 (0) 22 03 / 20 25-555" />
