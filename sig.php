@@ -31,7 +31,7 @@ switch ( PORTAL ) {
 		break;
 }
 
-$corp_phone = get_post_data_by_key('corp_phone');
+$corp_phone = get_post_data_by_key('corp_telephone');
 $corp_phone = ($corp_phone == '') ? '' : 'Dienstliche Handynummer: ' . $corp_phone;
 
 $template_contents = str_replace(
@@ -41,7 +41,7 @@ $template_contents = str_replace(
 		'{{jobtitle}}',
 		'{{email}}',
 		'{{telephone}}',
-		'{{corp_phone}}',
+		'{{corp_telephone}}',
 		'{{fax}}',
 		'<!-- NEWS_GIF -->'
 	),

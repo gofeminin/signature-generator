@@ -35,7 +35,7 @@ header_remove('X-UA-Compatible');
 					Telefon
 				</label>
 				<label>
-					<input type="tel" class="input_text" name="corp_phone" placeholder="+49 175 1337 187" />
+					<input type="tel" class="input_text" name="corp_telephone" placeholder="+49 175 1337 187" />
 					Dienstliche Handynummer
 				</label>
 				<label>
