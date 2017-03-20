@@ -32,7 +32,7 @@ switch ( PORTAL ) {
 }
 
 $corp_phone = get_post_data_by_key('corp_telephone');
-$corp_phone = ($corp_phone == '') ? '' : 'Dienstliche Handynummer: ' . $corp_phone;
+$corp_phone = ($corp_phone == '') ? '' : 'Dienstliche Handynummer: ' . $corp_phone . '<br>';
 
 $template_contents = str_replace(
 	array(
