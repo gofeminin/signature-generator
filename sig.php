@@ -41,8 +41,9 @@ $template_contents = str_replace(
 		'{{jobtitle}}',
 		'{{email}}',
 		'{{telephone}}',
+		'{{corp_phone}}',
 		'{{fax}}',
-			'<!-- NEWS_GIF -->'
+		'<!-- NEWS_GIF -->'
 	),
 	array(
 		get_post_data_by_key('firstname'),
@@ -50,6 +51,7 @@ $template_contents = str_replace(
 		get_post_data_by_key('jobtitle'),
 		get_post_data_by_key('email'),
 		get_post_data_by_key('telephone'),
+		$corp_phone,
 		get_post_data_by_key('fax'),
 		$newsContent
 	),
