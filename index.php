@@ -31,7 +31,7 @@ header_remove('X-UA-Compatible');
 					Jobtitel
 				</label>
 				<label>
-					<input type="tel" class="input_text" name="telephone" value="+49 (0) 22 03 / 20 25-" />
+					<input type="tel" class="input_text" name="telephone" value="+49 (0) 221 / 28 325-" />
 					Telefon
 				</label>
 				<label>
@@ -39,7 +39,7 @@ header_remove('X-UA-Compatible');
 					Dienstliche Handynummer
 				</label>
 				<label>
-					<input type="tel" class="input_text" name="fax" value="+49 (0) 22 03 / 20 25-555" />
+					<input type="tel" class="input_text" name="fax" value="+49 (0) 22 1 / 28 325-555" />
 					Fax
 				</label>
 				<label>
