@@ -25,6 +25,10 @@ switch ( PORTAL ) {
 				
 		} else if ( get_post_data_by_key('newsgif') === '' ) {
 			$template_contents = file_get_contents('templates/gofeminin_without_newsgif.html');
+		} else if ( get_post_data_by_key('newsgif') === '' && get_post_data_by_key('boxstories') === 'true' ) {
+			$template_contents = file_get_contents('templates/gofeminin_without_newsgif_boxstories.html');
+		} else if ( get_post_data_by_key('newsgif') === 'true' && get_post_data_by_key('boxstories') === 'true' ) {
+			$template_contents = file_get_contents('templates/gofeminin_boxstories.html');
 		} else {
 			$template_contents = file_get_contents('templates/gofeminin.html');
 		}

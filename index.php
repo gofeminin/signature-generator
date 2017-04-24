@@ -50,6 +50,10 @@ header_remove('X-UA-Compatible');
 					<input type="checkbox" class="radio" name="newsgif" value="true" />
 					News GIF
 				</label>
+				<label>
+					<input type="checkbox" class="radio" name="boxstories" value="true" />
+					BoxStories.de Banner
+				</label>
 				<fieldset>
 					Portal
 					<label>
