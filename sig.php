@@ -23,7 +23,7 @@ switch ( PORTAL ) {
 						$newsContent = "<tr><td width=\"100%\" style=\"max-widht:600px;\" align=\"left\"><a href=\"http://www.gofeminin.de/\" target=\"_blank\"><img src=\"http://www.gofeminin.de/reloaded/emailSignature.gif\" border=\"0\" /></a></td></tr>";
 				}
 				
-		} else if ( get_post_data_by_key('newsgif') === '' ) {
+		} else if ( get_post_data_by_key('newsgif') === '' && get_post_data_by_key('boxstories') === '' ) {
 			$template_contents = file_get_contents('templates/gofeminin_without_newsgif.html');
 		} else if ( get_post_data_by_key('newsgif') === '' && get_post_data_by_key('boxstories') === 'true' ) {
 			$template_contents = file_get_contents('templates/gofeminin_without_newsgif_boxstories.html');
