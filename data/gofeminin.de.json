@@ -1,0 +1,57 @@
+{
+	"success": true,
+	"data": [
+		{
+			"type": "input",
+			"label": "Vorname",
+			"value": "",
+			"placeholder": ""
+		},
+		{
+			"type": "input",
+			"label": "Nachname",
+			"value": "",
+			"placeholder": ""
+		},
+		{
+			"type": "input",
+			"label": "E-Mail",
+			"value": "",
+			"placeholder": ""
+		},
+		{
+			"type": "input",
+			"label": "Jobtitel",
+			"value": "",
+			"placeholder": ""
+		},
+		{
+			"type": "input",
+			"label": "Telefon",
+			"value": "+49 (0) 22 1 / 28 325-",
+			"placeholder": ""
+		},
+		{
+			"type": "input",
+			"label": "Dienstliche Handynummer",
+			"value": "",
+			"placeholder": "+49 175 1337 187"
+		},
+		{
+			"type": "input",
+			"label": "Fax",
+			"value": "+49 (0) 22 1 / 28 325-555",
+			"placeholder": ""
+		},
+		{
+			"type": "checkbox",
+			"label": "News GIF",
+			"value": "1"
+		},
+		{
+			"type": "checkbox",
+			"label": "BoxStories.de Banner",
+			"value": "1"
+		}
+	]
+}

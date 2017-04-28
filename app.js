@@ -27,7 +27,7 @@
 		}
 		return el;
 	};
-	var getData = function(url, opts, cb) {
+	var getData = function(url, cb, opts) {
 		opts = opts || {};
 		var passToCallback = function(json) {
 			cb(json);
@@ -47,21 +47,54 @@
 		};
 		fetch(url).then(processData);
 	};
+	var createTemplateEl = function(data) {
+		var node_name = 'input';
+		switch(data.type) {
+			case 'input':
+				break;
+			case 'checkbox':
+				break;
+			default:
+				break;
+		}
+	};
+	var loadTemplateFromJson = function(filename) {
+		var app_container = query('#app');
+		app_container.innerHTML = '';
+		var dataCallback = function(json) {
+			var elementsCallback = function(elData) {
+				console.log(elData);
+			};
+			json.data.forEach(elementsCallback);
+		};
+		getData('data/' + filename, dataCallback);
+	};
 	var renderPortalSelection = function() {
-		var portals = [];
+		var portals = [createEl('option', '', [['value', '']])];
 		var portalsCallback = function(portal) {
 			var el = createEl('option', portal.name, [
 				['value', portal.data]
 			]);
 			portals.push(el);
 		};
+		var selectChangeCallback = function(evt) {
+			var selectedIndex = this.selectedIndex,
+					selectedItem = this.children[selectedIndex],
+					selectedValue = selectedItem.value;
+			if (selectedValue === '') {
+				return;
+			}
+			else {
+				loadTemplateFromJson(selectedValue);
+			}
+		};
 		var cb = function(json) {
 			json.portals.forEach(portalsCallback);
 			var select = createEl('select', portals);
+			select.addEventListener('change', selectChangeCallback);
 			query('#app').appendChild(select);
-			console.log(portals);
 		};
-		getData('portals.json', null, cb);
+		getData('portals.json', cb);
 	};
 	var init = function() {
 		renderPortalSelection();
