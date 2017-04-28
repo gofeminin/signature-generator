@@ -1,0 +1,13 @@
+{
+	"success": true,
+	"portals": [
+		{
+			"name": "gofeminin.de",
+			"data": "gofeminin.de.json"
+		},
+		{
+			"name": "onmeda",
+			"data": "onmeda.json"
+		}
+	]
+}
