@@ -4,19 +4,21 @@
 			<td width="100%" align="left">
 				<font face="Arial, Verdana, sans-serif" size="2" style="font-size:13px;">
 					<font color="#951F60">
-						<strong>{{firstname}} {{lastname}}</strong>
+						<strong><%= firstname %> <%= lastname %></strong>
 					</font>
 					<br>
-					<font color="#68696b">{{jobtitle}}</font>
+					<font color="#68696b"><%= jobtitle %></font>
 					<br>
-					<a style="text-decoration:none;" href="mailto:{{email}}">
-						<font color="#68696b" style="text-decoration:none;">{{email}}</font>
+					<a style="text-decoration:none;" href="mailto:<%= email %>">
+						<font color="#68696b" style="text-decoration:none;"><%= email %></font>
 					</a>
 					<br>
-					<font color="#68696b">Tel. {{telephone}}</font>
+					<font color="#68696b">Tel. <%= telephone %></font>
 					<br>
-					<font color="#68696b">{{corp_telephone}}</font>
-					<font color="#68696b">Fax {{fax}}</font>
+					<% if (mobile) { %>
+						<font color="#68696b"><%= mobile %></font>
+					<% } %>
+					<font color="#68696b">Fax <%= fax %></font>
 				</font>
 			</td>
 		</tr>
@@ -60,10 +62,21 @@
 				</font>
 			</td>
 		</tr>
+		<% if (newsgif) { -%>
 		<tr>
 			<td width="100%" align="left">
 				<a href="http://www.gofeminin.de/" target="_blank"><img src="http://www.gofeminin.de/reloaded/emailSignature.gif" border="0" /></a>
 			</td>
 		</tr>
+		<% } -%>
+		<% if (boxstories) { -%>
+		<tr>
+			<td align="left">
+				<a target="_blank" href="https://www.boxstories.de/?utm_campaign=branding_april2017&utm_medium=editorial&utm_source=signatur&utm_content=1">
+					<img width="500" vspace="10" height="240" alt="boxstories.de" src="http://i.onmeda.de/boxstories.de.jpg" />
+				</a>
+			</td>
+		</tr>
+		<% } -%>
 	</tbody>
 </table>

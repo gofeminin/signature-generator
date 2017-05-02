@@ -3,55 +3,76 @@
 	"data": [
 		{
 			"type": "input",
+			"name": "firstname",
 			"label": "Vorname",
 			"value": "",
 			"placeholder": ""
 		},
 		{
 			"type": "input",
+			"name": "lastname",
 			"label": "Nachname",
 			"value": "",
 			"placeholder": ""
 		},
 		{
 			"type": "input",
+			"name": "email",
 			"label": "E-Mail",
 			"value": "",
 			"placeholder": ""
 		},
 		{
 			"type": "input",
+			"name": "jobtitle",
 			"label": "Jobtitel",
 			"value": "",
 			"placeholder": ""
 		},
 		{
 			"type": "input",
+			"name": "telephone",
 			"label": "Telefon",
 			"value": "+49 (0) 22 1 / 28 325-",
 			"placeholder": ""
 		},
 		{
 			"type": "input",
+			"name": "mobile",
 			"label": "Dienstliche Handynummer",
 			"value": "",
 			"placeholder": "+49 175 1337 187"
 		},
 		{
 			"type": "input",
+			"name": "fax",
 			"label": "Fax",
 			"value": "+49 (0) 22 1 / 28 325-555",
 			"placeholder": ""
 		},
 		{
 			"type": "checkbox",
+			"name": "newsgif",
 			"label": "News GIF",
 			"value": "1"
 		},
 		{
 			"type": "checkbox",
+			"name": "boxstories",
 			"label": "BoxStories.de Banner",
 			"value": "1"
+		},
+		{
+			"type": "button",
+			"id": "btn_gen_show",
+			"text": "Signatur anzeigen",
+			"value": "show"
+		},
+		{
+			"type": "button",
+			"id": "btn_gen_download",
+			"text": "Signatur herunterladen",
+			"value": "dl"
 		}
 	]
 }
