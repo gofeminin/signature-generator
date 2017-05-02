@@ -1,5 +1,6 @@
 (function(window, document){
 	var _APP = null;
+	var _OUTPUT = null;
 	var _INPUTCOUNTER = 0;
 	var query = function(sel) {
 		return document.querySelector(sel);
@@ -52,7 +53,7 @@
 	var createTemplateEl = function(data) {
 		var node_name = 'input';
 		var node = null;
-		var node_container = createEl('div');
+		var node_container = createEl('div', null, [['class', 'inputbox']]);
 		var label = null;
 		var nodeid = '';
 		switch(data.type) {
@@ -85,13 +86,13 @@
 			default:
 				break;
 		}
+		node_container.appendChild(node);
 		if (data.label) {
 			label = createEl('label', data.label, [
 				['for', nodeid]
 			]);
 			node_container.appendChild(label);
 		}
-		node_container.appendChild(node);
 		_INPUTCOUNTER = _INPUTCOUNTER+1;
 		return node_container;
 	};
@@ -123,13 +124,30 @@
 		inputs.forEach(inputsCallback);
 		return map;
 	};
+	var download = function(filename, contents) {
+		var el = createEl('a', 'tempdl', [
+			['href', 'data:text/html;charset=utf-8,' + encodeURIComponent(contents)],
+			['download', filename],
+			['style', 'display:none;']
+
+		]);
+		document.body.appendChild(el);
+		el.click();
+		document.body.removeChild(el);
+	};
 	var generateSignature = function(evt) {
 		var mode = evt.target.value;
 		var values = getValues();
 		var template = null;
 		getData('./templates/gofeminin.html', function(html){
 			template = ejs.render(html, values);
-			console.log(template);
+			if (mode === 'show') {
+				_OUTPUT.style.border = '1px solid #000';
+				_OUTPUT.style.overflow = 'auto';
+				_OUTPUT.innerHTML = template;
+			} else {
+				download('signature.html', template);
+			}
 		}, {dataType: 'text'});
 	};
 	var renderPortalSelection = function() {
@@ -153,6 +171,7 @@
 		};
 		var cb = function(json) {
 			_APP = query('#app');
+			_OUTPUT = query('#output');
 			json.portals.forEach(portalsCallback);
 			var select = createEl('select', portals);
 			select.addEventListener('change', selectChangeCallback);

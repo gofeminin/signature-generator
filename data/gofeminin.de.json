@@ -19,7 +19,7 @@
 			"type": "input",
 			"name": "email",
 			"label": "E-Mail",
-			"value": "",
+			"value": "vorname.nachname@gofeminin.de",
 			"placeholder": ""
 		},
 		{
