@@ -2,6 +2,7 @@
 	var _APP = null;
 	var _OUTPUT = null;
 	var _INPUTCOUNTER = 0;
+	var _HTML_TEMPLATE_FILE = '';
 	var query = function(sel) {
 		return document.querySelector(sel);
 	};
@@ -100,6 +101,7 @@
 		var app_container = query('#app');
 		app_container.innerHTML = '';
 		var dataCallback = function(json) {
+			_HTML_TEMPLATE_FILE = json.html_template_file;
 			var elementsCallback = function(el_data) {
 				var node = createTemplateEl(el_data);
 				_APP.appendChild(node);
@@ -139,7 +141,7 @@
 		var mode = evt.target.value;
 		var values = getValues();
 		var template = null;
-		getData('./templates/gofeminin.html', function(html){
+		var getDataCallback = function(html) {
 			template = ejs.render(html, values);
 			if (mode === 'show') {
 				_OUTPUT.style.border = '1px solid #000';
@@ -148,7 +150,9 @@
 			} else {
 				download('signature.html', template);
 			}
-		}, {dataType: 'text'});
+		};
+		getData('./templates/' + _HTML_TEMPLATE_FILE, getDataCallback,
+			{dataType: 'text'});
 	};
 	var renderPortalSelection = function() {
 		var portals = [createEl('option', '', [['value', '']])];

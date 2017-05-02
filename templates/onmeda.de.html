@@ -4,25 +4,27 @@
 			<td width="100%" align="left">
 				<font face="Arial, Verdana, sans-serif" size="2" style="font-size:13px;">
 					<font color="#951F60">
-						<strong>{{firstname}} {{lastname}}</strong>
+						<strong><%= firstname %> <%= lastname %></strong>
 					</font>
 					<br>
-					<font color="#68696b">{{jobtitle}}</font>
+					<font color="#68696b"><%= jobtitle %></font>
 					<br>
-					<a style="text-decoration:none;" href="mailto:{{email}}">
-						<font color="#68696b" style="text-decoration:none;">{{email}}</font>
+					<a style="text-decoration:none;" href="mailto:<%= email %>">
+						<font color="#68696b" style="text-decoration:none;"><%= email %></font>
 					</a>
 					<br>
-					<font color="#68696b">Tel. {{telephone}}</font>
+					<font color="#68696b">Tel. <%= telephone %></font>
 					<br>
-					<font color="#68696b">{{corp_telephone}}</font>
-					<font color="#68696b">Fax {{fax}}</font>
+					<% if (mobile) { -%>
+						<font color="#68696b">Mobil <%= mobile %></font>
+					<% } -%>
+					<font color="#68696b">Fax <%= fax %></font>
 				</font>
 			</td>
 		</tr>
 		<tr>
 			<td align="left">
-				<img width="600" vspace="10" height="130" alt="onmeda.de" src="http://i.onmeda.de/signature_koeln_onmeda_2016.gif" />
+				<img width="600" vspace="10" height="130" alt="gofeminin.de" src="http://i.onmeda.de/signature_koeln_2016.gif" />
 			</td>
 		</tr>
 		<tr>
@@ -32,17 +34,17 @@
 						<tr>
 							<td>
 								<a target="_blank" href="https://www.facebook.com/onmeda">
-									<img width="30" height="30" border="0" alt="Facebook" src="http://i.onmeda.de/onmeda-signature-facebook.png" />
+									<img width="30" height="30" border="0" alt="Facebook" src="http://www.gofeminin.de/mailing/signature-af/facebook.png" />
 								</a>
 							</td>
 							<td>
 								<a target="_blank" href="https://instagram.com/onmeda.de/">
-									<img width="30" height="30" border="0" alt="Instagram" src="http://i.onmeda.de/onmeda-signature-instagram.png">
+									<img width="30" height="30" border="0" alt="Instagram" src="http://www.gofeminin.de/mailing/signature-af/instagram.png">
 								</a>
 							</td>
 							<td>
 								<a target="_blank" href="https://de.pinterest.com/onmeda_de/">
-									<img width="30" height="30" border="0" alt="Pinterest" src="http://i.onmeda.de/onmeda-signature-pinterest.png">
+									<img width="30" height="30" border="0" alt="Pinterest" src="http://www.gofeminin.de/mailing/signature-af/pinterest.png">
 								</a>
 							</td>
 						</tr>

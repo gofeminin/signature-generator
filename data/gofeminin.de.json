@@ -1,5 +1,6 @@
 {
 	"success": true,
+	"html_template_file": "gofeminin.html",
 	"data": [
 		{
 			"type": "input",
