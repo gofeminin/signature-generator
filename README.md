@@ -1,9 +1,9 @@
 # How To gofeminin.de / Onmeda.de Signatur in Gmail einfügen
 
-[Hier](https://www.youtube.com/watch?v=YGX3DknDHww) geht es zu einem Video,
+[Hier](https://vimeo.com/206223158/293106c768) geht es zu einem Video,
 das zeigt, wie das ganze funktioniert.
 
-- [admin.onmeda.de/signature](https://admin.onmeda.de/signature/) aufrufen
+- [go.onmeda.com/signature](https://go.onmeda.com/signature/) aufrufen
 - Alles ordentlich ausfüllen
 - Radio-Button "Nein, gib mir nur den Code" ausgewählt lassen
 - Auf "Ich bin soweit!" klicken
@@ -12,10 +12,10 @@ das zeigt, wie das ganze funktioniert.
 
 # How To gofeminin.de / Onmeda.de Signatur in Thunderbird einfügen
 
-[Hier](https://www.youtube.com/watch?v=TzBPvQvBvm4) geht es zu einem Video,
+[Hier](https://vimeo.com/206223168/be4fb007ef) geht es zu einem Video,
 das zeigt, wie das ganze funktioniert.
 
-- [admin.onmeda.de/signature](https://admin.onmeda.de/signature/) aufrufen
+- [go.onmeda.de/signature](https://go.onmeda.com/signature/) aufrufen
 - Alles ordentlich ausfüllen
 - Radio-Button "Signatur Datei erstellen - Ja, klar!" ausgewählen
 - Auf "Ich bin soweit!" klicken
