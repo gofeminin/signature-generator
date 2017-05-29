@@ -8,6 +8,10 @@
 		{
 			"name": "onmeda",
 			"data": "onmeda.json"
+		},
+		{
+			"name": "gofeminin.de + onmeda",
+			"data": "gofeminin.de_onmeda.json"
 		}
 	]
 }
