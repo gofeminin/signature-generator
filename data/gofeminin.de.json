@@ -53,6 +53,12 @@
 		},
 		{
 			"type": "checkbox",
+			"name": "dmexco",
+			"label": "dmexco",
+			"value": "1"
+		},
+		{
+			"type": "checkbox",
 			"name": "newsgif",
 			"label": "News GIF",
 			"value": "1"

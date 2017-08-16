@@ -1,84 +1,109 @@
 <table cellspacing="2" cellpadding="0" width="600" border="0" bgcolor="#ffffff">
-	<tbody>
-		<tr>
-			<td width="100%" align="left">
-				<font face="Arial, Verdana, sans-serif" size="2" style="font-size:13px;">
-					<font color="#951F60">
-						<strong><%= firstname %> <%= lastname %></strong>
-					</font>
-					<br>
-					<font color="#68696b"><%= jobtitle %></font>
-					<br>
-					<a style="text-decoration:none;" href="mailto:<%= email %>">
-						<font color="#68696b" style="text-decoration:none;"><%= email %></font>
-					</a>
-					<br>
-					<font color="#68696b">Tel. <%= telephone %></font>
-					<br>
-					<% if (mobile) { -%>
-						<font color="#68696b">Mobil <%= mobile %></font><br>
-					<% } -%>
-					<font color="#68696b">Fax <%= fax %></font>
-				</font>
-			</td>
-		</tr>
-		<tr>
-			<td align="left">
-				<a target="_blank" href="http://unternehmen.gofeminin.de/">
-					<img width="600" vspace="10" height="130" alt="gofeminin.de und Onmeda Logo" src="http://i.onmeda.de/gofeminin_onmeda_signatur.jpg" />
-				</a>
-			</td>
-		</tr>
-		<tr>
-			<td width="100%" align="left">
-				<table cellspacing="0" cellpadding="5" width="1" border="0" bgcolor="#ffffff">
-					<tbody>
-						<tr>
-							<td>
-								<a target="_blank" href="https://www.facebook.com/gofeminin">
-									<img width="30" height="30" border="0" alt="Facebook" src="http://www.gofeminin.de/mailing/signature-af/facebook.png" />
-								</a>
-							</td>
-							<td>
-								<a target="_blank" href="https://instagram.com/gofeminin_de">
-									<img width="30" height="30" border="0" alt="Instagram" src="http://www.gofeminin.de/mailing/signature-af/instagram.png">
-								</a>
-							</td>
-							<td>
-								<a target="_blank" href="https://pinterest.com/gofeminin">
-									<img width="30" height="30" border="0" alt="Pinterest" src="http://www.gofeminin.de/mailing/signature-af/pinterest.png">
-								</a>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</td>
-		</tr>
-		<tr>
-			<td width="100%" align="left">
-				<font face="Arial, Verdana, sans-serif" size="2" style="font-size:9px;">
-					<br>
-					<font color="#68696b">Geschäftsführung: Marie-Laure Sauty de Chalon, Marc Flamme</font>
-					<br>
-					<font color="#68696b">HRB Köln 69001</font>
-				</font>
-			</td>
-		</tr>
-		<% if (newsgif) { -%>
-		<tr>
-			<td width="100%" align="left">
-				<a href="http://www.gofeminin.de/" target="_blank"><img src="http://www.gofeminin.de/reloaded/emailSignature.gif" border="0" /></a>
-			</td>
-		</tr>
-		<% } -%>
-		<% if (boxstories) { -%>
-		<tr>
-			<td align="left">
-				<a target="_blank" href="https://www.boxstories.de/?utm_campaign=branding_april2017&utm_medium=editorial&utm_source=signatur&utm_content=1">
-					<img width="500" vspace="10" height="240" alt="boxstories.de" src="http://i.onmeda.de/boxstories_de.jpg" />
-				</a>
-			</td>
-		</tr>
-		<% } -%>
-	</tbody>
+        <tbody>
+                <tr>
+                        <td width="100%" align="left">
+                                <font face="Arial, Verdana, sans-serif" size="2" style="font-size:13px;">
+                                        <font color="#951F60">
+                                                <strong><%= firstname %> <%= lastname %></strong>
+                                        </font>
+                                        <br>
+                                        <font color="#68696b"><%= jobtitle %></font>
+                                        <br>
+                                        <a style="text-decoration:none;" href="mailto:<%= email %>">
+                                                <font color="#68696b" style="text-decoration:none;"><%= email %></font>
+                                        </a>
+                                        <br>
+                                        <font color="#68696b">Tel. <%= telephone %></font>
+                                        <br>
+                                        <% if (mobile) { -%>
+                                                <font color="#68696b">Mobil <%= mobile %></font><br>
+                                        <% } -%>
+                                        <font color="#68696b">Fax <%= fax %></font>
+                                </font>
+                        </td>
+                </tr>
+                <tr>
+                        <td align="left">
+                                <a target="_blank" href="http://unternehmen.gofeminin.de/">
+                                        <img width="600" vspace="10" height="130" alt="gofeminin.de und Onmeda Logo" src="http://i.onmeda.de/gofeminin_onmeda_signatur.jpg" />
+                                </a>
+                        </td>
+                </tr>
+                <tr>
+                        <td width="100%" align="left">
+                                <table cellspacing="0" cellpadding="5" width="1" border="0" bgcolor="#ffffff">
+                                        <tbody>
+                                                <tr>
+                                                        <td>
+                                                                <a target="_blank" href="https://www.facebook.com/gofeminin">
+                                                                        <img width="30" height="30" border="0" alt="Facebook" src="http://www.gofeminin.de/mailing/signature-af/facebook.png" />
+                                                                </a>
+                                                        </td>
+                                                        <td>
+                                                                <a target="_blank" href="https://instagram.com/gofeminin_de">
+                                                                        <img width="30" height="30" border="0" alt="Instagram" src="http://www.gofeminin.de/mailing/signature-af/instagram.png">
+                                                                </a>
+                                                        </td>
+                                                        <td>
+                                                                <a target="_blank" href="https://pinterest.com/gofeminin">
+                                                                        <img width="30" height="30" border="0" alt="Pinterest" src="http://www.gofeminin.de/mailing/signature-af/pinterest.png">
+                                                                </a>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                </table>
+                        </td>
+                </tr>
+                <tr>
+                        <td width="100%" align="left">
+                                <font face="Arial, Verdana, sans-serif" size="2" style="font-size:9px;">
+                                        <br>
+                                        <font color="#68696b">Geschäftsführung: Marie-Laure Sauty de Chalon, Marc Flamme</font>
+                                        <br>
+                                        <font color="#68696b">HRB Köln 69001</font>
+                                </font>
+                        </td>
+                </tr>
+                <% if (dmexco) { -%>
+                <tr>
+                        <td width="100%" align="left">
+                                <img src="http://i.onmeda.de/dmexco2016_249x83px.jpg" border="0" />
+                        </td>
+                </tr>
+                <tr>
+                        <td width="100%" align="left">
+                                <p style="padding-left:9px;">
+                                        <span style="font-family:Arial, Verdana, sans-serif; color:#e0144f;font-size:13px; font-weight:bold; line-height:0.9">
+                                                Besuchen Sie uns auf der dmexco
+                                                <br />am Stand von Media Impact!
+                                        </span>
+                                        <br />
+                                        <span style="font-family:Arial, Verdana, sans-serif; color:#00abc4;font-size:13px; font-weight:normal;">
+                                                13. &amp; 14.09.2017, Halle 8 / C021 - D028
+                                        </span>
+                                        <br />
+                                        <span style="font-family:Arial, Verdana, sans-serif; color:#000;font-size:13px;font-weight:bold;">
+                                                Vereinbaren Sie jetzt einen Termin!
+                                        </span>
+                                </p>
+                        </td>
+                </tr>
+                <% } -%>
+                <% if (newsgif) { -%>
+                <tr>
+                        <td width="100%" align="left">
+                                <a href="http://www.gofeminin.de/" target="_blank"><img src="http://www.gofeminin.de/reloaded/emailSignature.gif" border="0" /></a>
+                        </td>
+                </tr>
+                <% } -%>
+                <% if (boxstories) { -%>
+                <tr>
+                        <td align="left">
+                                <a target="_blank" href="https://www.boxstories.de/?utm_campaign=branding_april2017&utm_medium=editorial&utm_source=signatur&utm_content=1">
+                                        <img width="500" vspace="10" height="240" alt="boxstories.de" src="http://i.onmeda.de/boxstories_de.jpg" />
+                                </a>
+                        </td>
+                </tr>
+                <% } -%>
+        </tbody>
 </table>

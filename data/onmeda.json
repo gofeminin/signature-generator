@@ -52,6 +52,12 @@
 			"placeholder": ""
 		},
 		{
+			"type": "checkbox",
+			"name": "dmexco",
+			"label": "dmexco",
+			"value": "1"
+		},
+		{
 			"type": "button",
 			"id": "btn_gen_show",
 			"text": "Signatur anzeigen",
