@@ -5,6 +5,8 @@ Working Example: [go.onmeda.com/signature](https://go.onmeda.com/signature/)
 
 Made possible by [EJS - Effective JavaScript templating](http://ejs.co/).
 
+
+
 ## How To gofeminin.de / Onmeda.de Signatur in Gmail einfügen
 
 [Hier](https://vimeo.com/206223158/293106c768) geht es zu einem Video,
@@ -15,6 +17,8 @@ das zeigt, wie das ganze funktioniert.
 - "Signatur anzeigen" klicken
 - Signatur mit gedrückter Maustaste auswählen und kopieren
 - Auf der [GMail Settings Page](https://mail.google.com/mail/u/0/#settings/general) unter "Signature" einfügen
+
+
 
 ## How To gofeminin.de / Onmeda.de Signatur in Thunderbird einfügen
 
@@ -30,3 +34,4 @@ das zeigt, wie das ganze funktioniert.
 - In Thunderbird unter "Edit" auf "Account Settings" klicken
 - "Attach the signature from a file..", und
     - Im Dateiauswahldialog die Signatur-Datei unter Y:\ auswählen
+
