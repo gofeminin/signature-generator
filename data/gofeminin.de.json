@@ -65,8 +65,8 @@
 		},
 		{
 			"type": "checkbox",
-			"name": "boxstories",
-			"label": "BoxStories.de Banner",
+			"name": "gofemininAdventskalender",
+			"label": "gofeminin.de Adventskalender",
 			"value": "1"
 		},
 		{
